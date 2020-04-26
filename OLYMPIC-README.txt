@@ -7,7 +7,7 @@ Remember to populate the sql scripts in the order of
 4. queries.sql which has the queries
 
 You will probably need to change the o_username and o_password to your credentials in Olympic.java
-I'm not entirely sure how that works for grading purposes.
+I'm not entirely sure how that works in terms of accessing oracle on my account or your account for grading purposes.
 
 How to compile Olympic.java:
 javac -cp ojdbc7.jar:. Olympic.java
