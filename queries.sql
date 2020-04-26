@@ -16,7 +16,7 @@ delete from USER_ACCOUNT where username='queryuser1';
 eid := createEvent(3,14,2,TO_DATE('2012-08-09','yyyy-mm-dd'));
 
 -- createTeam
-tid := createTeam('London',2012,'Individual 70M Archery','United States','demoteam',268);
+tid := createTeam('London',2012,'Individual 70M Archery','United States','demoteam',63);
 
 -- registerTeam
 registerTeam(tid,eid);
@@ -31,9 +31,8 @@ addTeamMember(tid,pid);
 addEventOutcome(3,eid,tid,pid,1);
 
 -- dropTeamMember
-dropTeamMember(355);
+dropTeamMember(64);
 end;
-
 -- displaySport
 select sport_name,dob as year_added,host_city,olympic_num,event_id,gender,fname,lname,medal_title,country from
     (select * from
