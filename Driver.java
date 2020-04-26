@@ -336,5 +336,7 @@ public class Driver {
         // 
         Olympic.connectedAthletes(connection, 166, 3, 1);
         Olympic.logout(connection);
+        connection.commit();
+        connection.setAutoCommit(true);
     }
 }

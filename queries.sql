@@ -33,6 +33,7 @@ addEventOutcome(3,eid,tid,pid,1);
 -- dropTeamMember
 dropTeamMember(64);
 end;
+commit;
 -- displaySport
 select sport_name,dob as year_added,host_city,olympic_num,event_id,gender,fname,lname,medal_title,country from
     (select * from
